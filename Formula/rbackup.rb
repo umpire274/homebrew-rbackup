@@ -7,16 +7,16 @@ class Rbackup < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/rBackup/releases/download/v#{version}/rbackup-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "REPLACE_WITH_SHA256_MAC_INTEL"
+      sha256 "02d09256ba4b92c54b5d721ce471e042965b3a502bcc682b453d6e5a93253116"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/rBackup/releases/download/v#{version}/rbackup-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "REPLACE_WITH_SHA256_MAC_ARM"
+      sha256 "c0c83bf5ff4e104b7e73b47c6d255f4f8e2132bcf4c5b82da213fa0e0f033a9e"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/rBackup/releases/download/v#{version}/rbackup-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "REPLACE_WITH_SHA256_LINUX_X64"
+    sha256 "7bd131b72e2b086763a11696894bb69d4063f97b981e9911d058814f25a1c5be"
   end
 
   # facoltativo, aiuta `brew livecheck`
